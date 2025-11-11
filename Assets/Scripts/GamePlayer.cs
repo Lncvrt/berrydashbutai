@@ -142,14 +142,12 @@ public class GamePlayer : MonoBehaviour
             lastMoveTime = Time.time;
             bird.transform.position += new UnityEngine.Vector3(-movespeed, 0f, 0f);
             ClampPosition(bird);
-            bird.transform.localScale = new UnityEngine.Vector3(1.35f, 1.35f, 1.35f);
         }
         if (doMoveRight && !doMoveLeft)
         {
             lastMoveTime = Time.time;
             bird.transform.position += new UnityEngine.Vector3(movespeed, 0f, 0f);
             ClampPosition(bird);
-            bird.transform.localScale = new UnityEngine.Vector3(-1.35f, 1.35f, 1.35f);
         }
         if (doJump && isGrounded)
         {
@@ -523,7 +521,6 @@ public class GamePlayer : MonoBehaviour
     void Respawn()
     {
         bird.transform.position = new UnityEngine.Vector3(0f, -4.3f, 0f);
-        bird.transform.localScale = new UnityEngine.Vector3(1.35f, 1.35f, 1.35f);
         rb.gravityScale = 0f;
         rb.linearVelocity = UnityEngine.Vector2.zero;
         score = 0;
