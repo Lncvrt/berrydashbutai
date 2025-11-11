@@ -66,7 +66,7 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "BerryDashLite.slnx",
+    "dotnet.defaultSolution": "berrydashbutai.slnx",
     "editor.formatOnSave": true,
     "dotnet.formatting.organizeImportsOnFormat": true,
     "csharp.format.enable": true
